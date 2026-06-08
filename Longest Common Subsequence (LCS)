@@ -19,23 +19,16 @@ int LCS(string X, string Y, int m, int n, vector<vector<int>>& dp)
     );
 }
 
-int main()
-{
+int main(){
     string X, Y;
-
     cout << "Enter first string: ";
     cin >> X;
-
     cout << "Enter second string: ";
     cin >> Y;
-
     int m = X.length();
     int n = Y.length();
-
     vector<vector<int>> dp(m + 1, vector<int>(n + 1, -1));
-
     cout << "Length of LCS = "
          << LCS(X, Y, m, n, dp);
-
     return 0;
 }
